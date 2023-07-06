@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root{
+    --cor-primaria: #7e3eed;
+    --cor-secundaria: white;
+    --cor-fundo: rgb(3, 3, 3);
+    --font-primaria: sans-serif;
+    --font-titulo: 'Poppins', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--font-primaria);
+    margin: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+h2, p, a{
+    color: var(--cor-secundaria);
+}
+
+h1{
+    color: white;
+    line-height: 1em;
+    font-family: var(--font-titulo);
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3em;
+    line-height: 1em;
+    min-width: 600px;
+    font-family: var(--font-titulo);
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+}
+
+ul a{
+    padding: 13px;
+    border-radius: 15px;
+}
+
+ul a:hover{
+    outline: 1px solid var(--cor-secundaria);
+    transition: 1s;
+}
+
+#revendedor-bt a{
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+#revendedor-bt a:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+span{
+    color: var(--cor-primaria) ;
+}
+
+aside{
+    max-width: 45vw;
+}
+
+main p {
+    max-width: 500px;
+    min-width: 250px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+article img{
+    width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+}
+footer{
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 600px) {
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
