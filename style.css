@@ -87,9 +87,9 @@ span{
     color: var(--cor-primaria) ;
 }
 
-aside{
+/* aside{
     max-width: 45vw;
-}
+} */
 
 main p {
     max-width: 500px;
