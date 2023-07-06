@@ -46,9 +46,8 @@ h1{
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1em;
-    min-width: 600px;
     font-family: var(--font-titulo);
 }
 
@@ -100,7 +99,8 @@ main p {
 }
 
 article img{
-    width: 500px;
+    width: 50vw;
+    max-width: 600px;
 }
 
 form{
@@ -140,4 +140,5 @@ footer{
         align-items: center;
         gap: 20px;
     }
+
 }
